@@ -1,6 +1,6 @@
 language: ruby
 
-install: echo "party time"
+install: echo "party time!!"
 
 script: echo "like it's cat meow 99" && true
 

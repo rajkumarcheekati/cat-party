@@ -14,17 +14,17 @@ deploy:
     access_key_id: AKIAIJGOFHHQTTDESNGQ
     secret_access_key: &1
       secure: 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
-    region: us-east-1
+    region: us-south-1
     local_dir: dpl_cd_upload
     skip_cleanup: true
     on: &2
       repo: rajkumarcheekati/cat-party
-    bucket: traviscicodedeploy
+    bucket: traviscicodedeploy1
   - provider: codedeploy
     access_key_id: AKIAIJGOFHHQTTDESNGQ
     secret_access_key: *1
     region: ap-south-1
-    bucket: traviscicodedeploy
+    bucket: traviscicodedeploy1
     key: latest.zip
     bundle_type: zip
     application: travisCI
